@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Lato', sans-serif;
+  color: white;
+
+}
+
+.main {
+  background-image: url(bg.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+#logo {
+  position: absolute;
+  left: 0px;
+  color: white;
+  padding: 5px;
+}
+
+.navigation {
+  list-style-type: none;
+  /* from flexbox tutorial linked in assignment page */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  padding: 5px;
+}
+
+.center-container {
+  display: flex;
+  height: 50%;
+  background-color: red;
+  z-index:10;
+}
+
+.center-item {
+  background-color: green;
+  align-self: center;
+}
+
+.list-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  background-color: blue
+}
+
+.list-item {
+  background-color: blue;
+
+}
