@@ -7,9 +7,10 @@ Screenshot of layout stage:
 ![screenshot](https://github.com/codavis18/hw1-vox-landingpage/blob/master/screencap1.tiff "screenshot of unformatted html")
 
 Screenshot of desktop-view:
+![screenshot](https://github.com/codavis18/hw1-vox-landingpage/blob/gh-pages/hw1-desktop-screen.png?raw=true)
 
 Screenshot of mobile-view:
-
+![screenshot](https://github.com/codavis18/hw1-vox-landingpage/blob/gh-pages/hw1-mobile-screen.png?raw=true)
 
 ###What worked
 
