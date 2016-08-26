@@ -13,7 +13,6 @@ link to hosted page: https://codavis18.github.io/hw1-vox-landingpage/
 
 ![screenshot](https://github.com/codavis18/hw1-vox-landingpage/blob/gh-pages/hw1-mobile-sreen.png?raw=true)
 
-##What worked
+##What worked / didn't work
+Originally, I struggled with flexbox layout and the responsive views, but after spending more time with it, I got everything to work.
 
-
-##What didn't work
