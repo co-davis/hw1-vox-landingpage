@@ -1,57 +1,245 @@
-body {
-  margin: 0;
-  padding: 0;
-
-  font-family: 'Lato', sans-serif;
-  color: white;
-
-}
-
-.main {
-  background-image: url(bg.jpg);
-  background-size: cover;
+html{
   height: 100%;
 }
 
-#logo {
-  position: absolute;
-  left: 0px;
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
   color: white;
-  padding: 5px;
+  background: linear-gradient(transparent, black 90%), url(bg.jpg);
+  background-size: cover;
 }
 
-.navigation {
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.center-email button {
+  background-color: rgb(86, 182, 139);
+	border-radius:8px;
+	color:white;
+	font-size:18px;
+  padding: 10px;
+  width: 150px;
+  margin-left: 20px;
+  border: 0px;
+}
+
+.center-email input {
+  border-radius:8px;
+	font-size:18px;
+  padding: 10px;
+  width: 250px;
+  margin-left: 20px;
+  border: 0px;
+}
+
+button:hover {
+	background-color: rgb(66, 154, 114);
+;
+}
+
+button:active {
+	position:relative;
+	top:1px;
+}
+
+.nav-item-container {
   list-style-type: none;
   /* from flexbox tutorial linked in assignment page */
-  display: flex;
+  display: inline-flex;
   flex-flow: row wrap;
-  justify-content: flex-end;
+  padding-right: 10px;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav #logo img {
+  padding: 10px;
+  height: auto;
+  width: auto;
+  max-height: 60px;
+}
+
+
+/* TEXT LOGO INSTEAD OF IMAGE BELOW */
+/*nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a#logo {
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+  padding-left: 5px;
+  color: white;
+}*/
+
+
 .nav-item {
-  padding: 5px;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-item:hover {
+  color: rgba(255, 255, 255, 1);
+  border-style: solid;
+  border-width: 0px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.sign-in {
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+}
+
+.sign-in:hover {
+  color: rgba(255, 255, 255, 1);
+  border-color: rgba(255, 255, 255, 1);
 }
 
 .center-container {
   display: flex;
-  height: 50%;
-  background-color: red;
-  z-index:10;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .center-item {
-  background-color: green;
   align-self: center;
+  text-align: center;
 }
+
+.center-email {
+  align-self: center;
+  background-color: rgba(174, 180, 180, 0.5);
+  border-radius: 8px;
+  padding-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
+}
+
 
 .list-container {
   display: flex;
-  flex-flow: row;
-  justify-content: center;
-  background-color: blue
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-bottom: 50px;
+  border-top-color: rgba(128, 128, 128, .5);
+  border-top-style: solid;
+  border-top-width: 1px;
+
+}
+
+.list-heading {
+  color: white;
 }
 
 .list-item {
-  background-color: blue;
+  list-style-type: none;
+  color: grey;
+}
 
+.list-item li {
+  font-size: 12px;
+  padding: 5px;
+}
+
+/*#gradient {
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,#000 67%);
+}*/
+
+footer {
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*position:absolute;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;*/
+
+
+}
+
+footer a img {
+  padding-left: 5px;
+  padding-bottom: 15px;
+  max-height: 16px;
+}
+
+/* TEXT ICON INSTEAD OF IMAGE LOGO */
+/*footer a {
+  color: white;
+  padding-left: 5px;
+  padding-bottom: 15px;
+
+}*/
+
+.bottom-footer li {
+  display: inline-flex;
+  list-style-type: none;
+  align-items: flex-end;
+  padding-right: 10px;
+  flex-flow: row;
+}
+
+@media only screen and (max-width: 640px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .nav-item-container {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .center-container {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .center-email {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .center-email * {
+    margin: 10px;
+  }
+
+  .list-container {
+    flex-direction: column;
+  }
+  .list-item :not(.list-heading) {
+    display: none
+  }
 }

@@ -3,13 +3,17 @@ Build a Landing Page
 
 link to hosted page: https://codavis18.github.io/hw1-vox-landingpage/
 
-Screenshot of layout stage:
-![screenshot](https://github.com/codavis18/hw1-vox-landingpage/blob/master/screencap1.tiff "screenshot of unformatted html")
+###Screenshot of layout stage:
+![screenshot](https://github.com/codavis18/hw1-vox-landingpage/blob/gh-pages/layout-stage.png?raw=true)
+
+###Screenshot of desktop-view:
+![screenshot](https://github.com/codavis18/hw1-vox-landingpage/blob/gh-pages/hw1-desktop-screen.png?raw=true)
+
+###Screenshot of mobile-view:
+
+![screenshot](https://github.com/codavis18/hw1-vox-landingpage/blob/gh-pages/hw1-mobile-sreen.png?raw=true)
+
+##What worked
 
 
-###What worked
-I was able to layout the page in HTML, add in fonts and icons from Google Fonts and FontAwesome, and add a background cover image. I was also able to format the nav bar using flexboxes.
-
-
-###What didn't work
-After that, I got stuck trying to format the rest of the page. Any CSS changes I made to children of the "main" div below the navbar would not apply. I tried to do simple things like changing "background-color" of various divs to try to debug the issue but to no avail (that's why the email form and "Let's make some shirts!" text have a green background).
+##What didn't work
